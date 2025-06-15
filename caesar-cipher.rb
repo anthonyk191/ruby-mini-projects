@@ -1,3 +1,4 @@
+require 'pry-byebug'
 #Ceasar Cipher Hash Map
 numbers = (1..26).to_a
 alphabet = ('a'..'z').to_a
@@ -11,6 +12,7 @@ $hashmap_numbers_to_alphabet = {}
     $hashmap_CAPITAL[alphabet[i].to_s.upcase] = numbers[i]
 end
 
+binding.pry
 # puts hashmap_alphabet_to_numbers
 # puts hashmap_numbers_to_alphabet
 
